@@ -14,7 +14,6 @@
 		0347B7BC19465B3E00E9C9DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0347B7BB19465B3E00E9C9DC /* main.m */; };
 		0347B7C019465B3E00E9C9DC /* SAMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0347B7BF19465B3E00E9C9DC /* SAMAppDelegate.m */; };
 		0347B7C319465B3E00E9C9DC /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0347B7C119465B3E00E9C9DC /* Main_iPhone.storyboard */; };
-		0347B7C619465B3E00E9C9DC /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0347B7C419465B3E00E9C9DC /* Main_iPad.storyboard */; };
 		0347B7C919465B3E00E9C9DC /* SAMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0347B7C819465B3E00E9C9DC /* SAMViewController.m */; };
 		0347B7CB19465B3E00E9C9DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0347B7CA19465B3E00E9C9DC /* Images.xcassets */; };
 		0347B7D219465B3E00E9C9DC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0347B7D119465B3E00E9C9DC /* XCTest.framework */; };
@@ -22,6 +21,7 @@
 		0347B7D419465B3E00E9C9DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0347B7B319465B3E00E9C9DC /* UIKit.framework */; };
 		0347B7DC19465B3E00E9C9DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0347B7DA19465B3E00E9C9DC /* InfoPlist.strings */; };
 		0347B7DE19465B3E00E9C9DC /* main_queue_block_testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0347B7DD19465B3E00E9C9DC /* main_queue_block_testTests.m */; };
+		0347B7E919465D3D00E9C9DC /* SAMSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0347B7E819465D3D00E9C9DC /* SAMSyncManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,6 @@
 		0347B7BE19465B3E00E9C9DC /* SAMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMAppDelegate.h; sourceTree = "<group>"; };
 		0347B7BF19465B3E00E9C9DC /* SAMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMAppDelegate.m; sourceTree = "<group>"; };
 		0347B7C219465B3E00E9C9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		0347B7C519465B3E00E9C9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		0347B7C719465B3E00E9C9DC /* SAMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMViewController.h; sourceTree = "<group>"; };
 		0347B7C819465B3E00E9C9DC /* SAMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMViewController.m; sourceTree = "<group>"; };
 		0347B7CA19465B3E00E9C9DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -55,6 +54,8 @@
 		0347B7D919465B3E00E9C9DC /* main_queue_block_testTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "main_queue_block_testTests-Info.plist"; sourceTree = "<group>"; };
 		0347B7DB19465B3E00E9C9DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0347B7DD19465B3E00E9C9DC /* main_queue_block_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main_queue_block_testTests.m; sourceTree = "<group>"; };
+		0347B7E719465D3D00E9C9DC /* SAMSyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMSyncManager.h; sourceTree = "<group>"; };
+		0347B7E819465D3D00E9C9DC /* SAMSyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMSyncManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +118,12 @@
 				0347B7BE19465B3E00E9C9DC /* SAMAppDelegate.h */,
 				0347B7BF19465B3E00E9C9DC /* SAMAppDelegate.m */,
 				0347B7C119465B3E00E9C9DC /* Main_iPhone.storyboard */,
-				0347B7C419465B3E00E9C9DC /* Main_iPad.storyboard */,
 				0347B7C719465B3E00E9C9DC /* SAMViewController.h */,
 				0347B7C819465B3E00E9C9DC /* SAMViewController.m */,
 				0347B7CA19465B3E00E9C9DC /* Images.xcassets */,
 				0347B7B619465B3E00E9C9DC /* Supporting Files */,
+				0347B7E719465D3D00E9C9DC /* SAMSyncManager.h */,
+				0347B7E819465D3D00E9C9DC /* SAMSyncManager.m */,
 			);
 			path = main_queue_block_test;
 			sourceTree = "<group>";
@@ -232,7 +234,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0347B7C619465B3E00E9C9DC /* Main_iPad.storyboard in Resources */,
 				0347B7CB19465B3E00E9C9DC /* Images.xcassets in Resources */,
 				0347B7C319465B3E00E9C9DC /* Main_iPhone.storyboard in Resources */,
 				0347B7BA19465B3E00E9C9DC /* InfoPlist.strings in Resources */,
@@ -254,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0347B7E919465D3D00E9C9DC /* SAMSyncManager.m in Sources */,
 				0347B7C019465B3E00E9C9DC /* SAMAppDelegate.m in Sources */,
 				0347B7C919465B3E00E9C9DC /* SAMViewController.m in Sources */,
 				0347B7BC19465B3E00E9C9DC /* main.m in Sources */,
@@ -293,14 +295,6 @@
 				0347B7C219465B3E00E9C9DC /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		0347B7C419465B3E00E9C9DC /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0347B7C519465B3E00E9C9DC /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		0347B7DA19465B3E00E9C9DC /* InfoPlist.strings */ = {
@@ -395,6 +389,7 @@
 				GCC_PREFIX_HEADER = "main_queue_block_test/main_queue_block_test-Prefix.pch";
 				INFOPLIST_FILE = "main_queue_block_test/main_queue_block_test-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -408,6 +403,7 @@
 				GCC_PREFIX_HEADER = "main_queue_block_test/main_queue_block_test-Prefix.pch";
 				INFOPLIST_FILE = "main_queue_block_test/main_queue_block_test-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -471,6 +467,7 @@
 				0347B7E319465B3E00E9C9DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0347B7E419465B3E00E9C9DC /* Build configuration list for PBXNativeTarget "main_queue_block_testTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +476,7 @@
 				0347B7E619465B3E00E9C9DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
