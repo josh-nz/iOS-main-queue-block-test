@@ -30,7 +30,9 @@ static dispatch_queue_t syncQueue;
         NSLog(@"Dispatching sync notification");
         dispatch_async(dispatch_get_main_queue(), ^{
             [[NSNotificationCenter defaultCenter] postNotificationName:@"syncdone" object:nil];
+            NSLog(@"Notification sent and processed by observers");
         });
+        NSLog(@"Returning from sync");
     });
 }
 

@@ -23,7 +23,17 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="didTouchButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rRP-wL-61m"/>
+                                    <action selector="didTouchIBActionTest:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Kbu-vQ-HbR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBh-Ys-FPH">
+                                <rect key="frame" x="20" y="302" width="280" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Core Data main queue save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTouchCoreDataTest:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VE0-jd-h1E"/>
                                 </connections>
                             </button>
                         </subviews>

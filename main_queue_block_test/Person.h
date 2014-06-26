@@ -1,5 +1,5 @@
 //
-//  SAMSyncManager.h
+//  Person.h
 //  main_queue_block_test
 //
 //  Created by Joshua Wood on 10/06/14.
@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
-@interface SAMSyncManager : NSObject
 
-+ (instancetype)sharedSyncManager;
+@interface Person : NSManagedObject
 
-- (void)sync;
+@property (nonatomic, retain) NSString * name;
 
 @end
